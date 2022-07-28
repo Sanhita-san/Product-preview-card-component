@@ -34,7 +34,7 @@ body {
 }
 
 #perfume-image {
-  background-image: url("/images/image-product-desktop.jpg");
+  background-image: url("./images/image-product-desktop.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 10px 0 0 10px;
@@ -108,7 +108,7 @@ button:hover {
   }
 
   #perfume-image {
-    background-image: url("/images/image-product-mobile.jpg");
+    background-image: url("./images/image-product-mobile.jpg");
     background-position: top;
     border-radius: 10px 10px 0 0;
   }
