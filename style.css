@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --Cream: hsl(30, 38%, 92%);
+  --Dark-cyan: hsl(158, 36%, 37%);
+
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: var(--Cream);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 20px;
+}
+
+#card {
+  background-color: var(--White);
+  border-radius: 15px;
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  grid-template-columns: 1fr 1fr;
+  width: 580px;
+}
+
+#perfume-image {
+  background-image: url("/images/image-product-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px 0 0 10px;
+  height: 100%;
+  width: 100%;
+}
+
+#description {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 30px;
+}
+
+h5 {
+  color: var(--Dark-grayish-blue);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+h1 {
+  color: var(--Very-dark-blue);
+  font-family: "Fraunces", sans-serif;
+  line-height: 0.95;
+}
+
+#description div {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+p {
+  color: var(--Dark-grayish-blue);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#pricing h1 {
+  color: var(--Dark-cyan);
+}
+
+#pricing small {
+  color: var(--Dark-grayish-blue);
+  text-decoration: line-through;
+}
+
+button {
+  align-items: center;
+  background-color: var(--Dark-cyan);
+  border: none;
+  border-radius: 5px;
+  color: var(--White);
+  cursor: pointer;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  gap: 10px;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: hsl(156deg 42% 18%);
+}
+
+@media screen and (min-width: 375px) and (max-width: 1439px) {
+  #card {
+    grid-template-columns: none;
+    grid-template-rows: 0.75fr 1fr;
+  }
+
+  #perfume-image {
+    background-image: url("/images/image-product-mobile.jpg");
+    background-position: top;
+    border-radius: 10px 10px 0 0;
+  }
+}
